@@ -1,6 +1,9 @@
 # Modular awesomewm config
-This is my opinionated take on a modular [awesomewm](https://github.com/awesomeWM/awesome) configuration. The structure is setup as such:
+This is my opinionated take on a modular [awesomewm](https://github.com/awesomeWM/awesome) configuration. I simply split the default rc.lua into various files and made a very slight change to how wallpapers are loaded.
 
+**NOTE:** This config is based on the **awesome git master branch**. I cannot guarantee it to work if you run it on the current stable version, 4.3. To compile awesomewm yourself, follow [this guide](https://awesomewm.org/apidoc/documentation/10-building-and-testing.md.html)
+
+The structure is setup as such:
 - rc.lua - initialize other modules & error handling
 - bindings - bindings
 	- mouse.lua - all global mouse bindings
