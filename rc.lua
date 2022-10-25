@@ -19,6 +19,9 @@ naughty.notification {
 end)
 -- }}}
 
+-- Load autofocus
+require("awful.autofocus")
+
 -- Load global definitions
 require("defs.vars")
 require("defs.theme")
