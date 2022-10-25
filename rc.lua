@@ -23,13 +23,11 @@ end)
 require("defs.vars")
 require("defs.theme")
 require("defs.layouts")
+require("defs.tags")
 
 -- Load menus
 require("ui.promptmenu")
 require("ui.menubar")
-
--- Load Wibar
-require("ui.wibar")
 
 -- Load bindings
 require("bindings.mouse")

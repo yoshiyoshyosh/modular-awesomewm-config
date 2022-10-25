@@ -6,5 +6,6 @@ theme = "default"
 
 beautiful.init(gears.filesystem.get_themes_dir() .. theme .. "/theme.lua")
 
--- per-theme wallpaper config
+-- per-theme wallpaper and bar config
 require("themes." .. theme .. ".wallpaper")
+require("themes." .. theme .. ".wibar")

@@ -16,15 +16,16 @@ The structure is setup as such:
 - defs - global definitions
 	- layouts.lua - define the layout table
 	- rules.lua - define client rules
+	- tags.lua - define the tags
 	- theme.lua - define the theme
 	- vars.lua - define misc. variables
 - ui - ui modules
-	- wibar - configure the wibar
-		- init.lua - actually builds the wibar
-		- widgets.lua - misc. widgets defined outside of `screen.connect_signal`
 	- menubar.lua - configure the menubar
 	- notifications.lua - configure notifications
 	- promptmenu.lua - configure the prompt menu
 	- titlebars.lua - configure window titlebars
+	- widgets.lua - misc. widgets
 - themes - use themes
-	- note: I made wallpapers go by a per-theme basis. wallpaper.lua in the theme directory will get loaded, and the wallpaper image is defined there
+	- wibar.lua - configure the wibar layout
+	- wallpaper.lua - configure the wallpaper
+	- wallpapers and wibars are loaded per-theme

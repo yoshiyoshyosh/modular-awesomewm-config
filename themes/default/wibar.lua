@@ -1,14 +1,9 @@
 local awful = require("awful")
 local wibox = require("wibox")
 
-require("ui.wibar.widgets")
-
-local tag_names = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
+require("ui.widgets")
 
 screen.connect_signal("request::desktop_decoration", function(s)
-	-- Each screen has its own tag table.
-	awful.tag(tag_names, s, awful.layout.layouts[1])
-
 	-- Create a promptbox for each screen
 	s.mypromptbox = awful.widget.prompt()
 
